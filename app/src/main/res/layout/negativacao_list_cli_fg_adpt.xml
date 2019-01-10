@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <TextView
+                    android:id="@+id/tvNomeCliNegativFgAdp"
+                    android:text="NOME DO CLIENTE"
+                    android:textSize="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvRZSociNegativFgAdp"
+                    android:text="RAZÃO SOCIAL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvEndereNegativFgAdp"
+                    android:text="ENDERECO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            <TableRow>
+                <TextView
+                    android:id="@+id/tvDataNegativFgAdp"
+                    android:hint="dd/mm/aaaa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/tvDesRotNegativLisCliFgAdp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    />
+            </TableRow>
+
+
+    </TableLayout>
+</LinearLayout>

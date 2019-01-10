@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".historiFg.HistoricoFragment">
+
+    <TableLayout
+        android:id="@+id/tbLayHistFg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TableRow>
+            <EditText
+                android:id="@+id/edtHistDatIni"
+                android:hint="DATA INICIAL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                />
+            <EditText
+                android:id="@+id/edtHistDatFim"
+                android:hint="DATA FINAL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                />
+        </TableRow>
+        <TextView
+            android:text="ROTA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <Spinner
+            android:id="@+id/spiHistFgRota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMPRESA"
+            />
+        <Spinner
+            android:id="@+id/spEmpresas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TableRow>
+            <Button
+                android:id="@+id/btHistPesqFg"
+                android:text="PESQUISAR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+            <ImageButton
+                android:id="@+id/btHistShoHid"
+                android:text="PESQUISAR"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+
+                android:src="@drawable/eye_closed"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/lvHistoriFg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+
+</LinearLayout>

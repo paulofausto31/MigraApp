@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/actExport"
+        android:icon="@drawable/exportar_para_internet"
+        app:showAsAction="always"
+        android:title="" />
+    <item
+        android:id="@+id/actImport"
+        android:icon="@drawable/importar_da_internet"
+        app:showAsAction="always"
+
+        android:title="" />
+    <item
+        android:id="@+id/actCesta"
+        android:icon="@drawable/basket_full"
+        app:showAsAction="always"
+        android:title="" />
+    <item
+        android:id="@+id/actLupa"
+        android:icon="@drawable/lupa"
+        app:showAsAction="always"
+        android:title="" />
+
+</menu>

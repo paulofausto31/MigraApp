@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="migra.br.smart.Activityproduto.AtvInsereAlteraItemPedido">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteY="8dp"
+            tools:layout_editor_absoluteX="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvUnArmaz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="CX"/>
+
+                <EditText
+                    android:id="@+id/edtQtdUnArmaz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textAlignment="center"
+                    android:textSize="30dp" />
+
+                <ImageButton
+                    android:id="@+id/imgBtAddQtdUnArmaz"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/plus32"
+                    android:layout_marginRight="40dp"
+                    />
+                <ImageButton
+                    android:id="@+id/imgBtSubQtdUnArmz"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/menos32"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvUnVenda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="UN"/>
+
+                <EditText
+                    android:id="@+id/edtQtdUnVenda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textAlignment="center"
+                    android:textSize="30dp" />
+
+                <ImageButton
+                    android:id="@+id/imgBtAddQtdUnVend"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/plus32"
+                    android:layout_marginRight="40dp"
+                    />
+                <ImageButton
+                    android:id="@+id/imgBtSubQtdUnVend"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/menos32"
+                    />
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:id="@+id/rGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:id="@+id/radDesc"
+                    android:text="DESCONTO"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:checked="true"/>
+                <RadioButton
+                    android:id="@+id/radAcre"
+                    android:text="ACRÉSCIMO"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    />
+            </RadioGroup>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="%"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:text="0"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    android:id="@+id/edtDesAcrPercentCalc"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="R$"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    android:id="@+id/edTxDescAcreDin"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <Spinner
+                    android:id="@+id/spiDgFgLAdpVal"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:text="TOTAL"/>
+                <TextView
+                    android:id="@+id/tvDgTotal"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="ESTOQUE "
+                        android:textSize="20dp"
+                        />
+                    <TextView
+                        android:id="@+id/tvDgProdListCalcSaldProd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:textSize="20sp"
+                        />
+                    <Button
+                        android:id="@+id/btProdListSaldProd"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="CONSULTAR"
+                        />
+                </TableRow>
+            </TableLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btOk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="OK"/>
+                <Button
+                    android:id="@+id/btCancelar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="CANCELAR"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+</ScrollView>

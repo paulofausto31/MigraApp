@@ -1,0 +1,296 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".pedidoFragment.PedidoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RECEBER PEDIDO EM"
+                    />
+                <TableRow>
+                    <Spinner
+                        android:id="@+id/spEmpresas"
+                        android:layout_width="wrap_content"
+                        android:layout_marginBottom="20px"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+
+                        android:elevation="10dp"
+                        android:spinnerMode="dialog" />
+                </TableRow>
+            </TableLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinCodPedido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+
+                    android:elevation="10dp"
+                    android:spinnerMode="dialog" />
+
+                <Button
+                    android:id="@+id/btStatusPed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/retangulo_verde_aberto"
+                    android:text="ABERTO" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvNomeCliPed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="NOME CLIENTE"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="LIMITE"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:id="@+id/tvNomeCliLimiCred"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="0"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        />
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:backgroundTint="#ff0000"
+                    android:elevation="10dp"
+
+
+                    android:text="FORMA DE PAGAMENTO"
+                    android:textSize="18dp" />
+
+                <Spinner
+                    android:id="@+id/spiFormPgVenda"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="2"
+                    android:backgroundTint="#ff0000"
+                    android:elevation="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:text="PRAZO PAGAMENTO DIAS"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/edTxPrazoPgVenda"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:ems="10"
+                    android:inputType="numberSigned"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NÚM PARCELAS"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edTxParceQtdVenda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberSigned"
+                    android:text="1"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PRAZO MAXIMO DIAS"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edTxPrazMaxDias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberSigned"
+                    android:text="0"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DATA INÍCIO"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtDataIni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:hint="DATA INÍCIO"
+                    android:inputType="date" />
+
+                <EditText
+                    android:id="@+id/edTxHoraIni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:hint="HORA INÍCIO"
+                    android:inputType="time" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DATA FIM"
+                android:textSize="18dp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edTxDataFim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:hint="DATA FIM"
+                    android:inputType="date" />
+
+                <EditText
+                    android:id="@+id/edTxHoraFim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:hint="HORA FIM"
+                    android:inputType="time" />
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btNovoPedido"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:text="NOVO"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/btContinuar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:text="CONTINUAR"
+                        android:textSize="20sp" />
+                    <!--android:background="@drawable/play"-->
+
+                    <Button
+                        android:id="@+id/btUpdate_frag_ped"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:text="ATUALIZAR"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/btFragPedDuplicar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:text="DUPLICAR"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/btPedidoObs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:text="OBSERVAÇÃO"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+        </ScrollView>
+</LinearLayout>

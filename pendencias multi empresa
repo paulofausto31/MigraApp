@@ -1,0 +1,3 @@
+separar pedidos por cnpj
+TABELA_K vai ter somente um cnpj, considerar o primeiro cnpj se houver mais de um
+

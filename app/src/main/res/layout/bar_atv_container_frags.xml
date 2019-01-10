@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".atvContainerFg.ActivityContainerFragments">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <!-- <include layout="@layout/content_prod2" /> -->
+
+    <FrameLayout
+        android:id="@+id/pedidoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+    </FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:visibility="gone"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/lupa"
+        app:backgroundTint="#ff0000"
+        android:scaleType="center"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabAtvContainPedExportar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="160dp"
+        android:layout_marginTop="5dp"
+        app:backgroundTint="#ff0000"
+
+        android:scaleType="center"
+        android:src="@drawable/exportar_para_internet"
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabPedidos"
+        android:visibility="gone"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="5dp"
+        app:backgroundTint="#ff0000"
+        android:src="@drawable/basket_full"
+        android:scaleType="center"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabAtvContainPedImport"
+        android:visibility="gone"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/importar_da_internet"
+        app:backgroundTint="#ff0000"
+        android:scaleType="center"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabAtvContainCliCalc"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="5dp"
+        app:backgroundTint="#ffaa00"
+        android:src="@drawable/money"
+        android:scaleType="center"
+        android:visibility="gone"/>
+
+    <!--
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabPedFechar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="220dp"
+        android:layout_marginTop="260dp"
+        app:backgroundTint="#ffaa00"
+        android:src="@drawable/complete_symbol"
+        android:scaleType="center"/>
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabNovoPed"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="140dp"
+        android:layout_marginTop="260dp"
+        app:backgroundTint="#ffaa00"
+        android:src="@drawable/plus32"
+        android:scaleType="center"/>
+
+
+-->
+</android.support.design.widget.CoordinatorLayout>

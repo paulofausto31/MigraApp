@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lvDgOperations"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+    <!--
+<TableLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+<TableRow>
+    <ImageView
+        android:id="@+id/imgDgOperations"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/circulo"
+        android:src="@drawable/complete_symbol"
+        android:scaleType="center"/>
+    <TextView
+        android:id="@+id/tvDgOperations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="FINALIZAR"/>
+
+</TableRow>
+    <TableRow>
+        <ImageButton
+            android:id="@+id/fabDgOperationsPedExportar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/circulo"
+            android:src="@drawable/exportar_para_internet32x32"
+            android:scaleType="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="EXPORTAR"/>
+    </TableRow>
+    <TableRow>
+        <ImageButton
+            android:id="@+id/fabDgOperationsPesquisa"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/circulo"
+            android:src="@drawable/lupa"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="PESQUISAR"/>
+    </TableRow>
+    <TableRow>
+        <ImageButton
+            android:id="@+id/fabDgOperationsNovoPed"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/plus32"
+            android:background="@drawable/circulo"
+            android:scaleType="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="NOVO PEDIDO"/>
+    </TableRow>
+    <TableRow>
+        <ImageButton
+            android:id="@+id/fabDgOperationsPedidos"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/circulo"
+            android:src="@drawable/basket_full"
+            android:scaleType="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="PEDIDOS"/>
+
+    </TableRow>
+</TableLayout>
+    -->
+</LinearLayout>

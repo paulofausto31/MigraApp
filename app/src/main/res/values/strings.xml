@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cod_vend">COD VENDEDOR</string>
+    <string name="title_application">Migra App</string>
+
+    <!-- Strings related to login -->
+    <string name="codigo_vendedor">CODIGO</string>
+    <string name="senha_vendedor">SENHA</string>
+    <string name="action_login">LOGIN</string>
+    <string name="action_key_beta">KEY</string>
+    <string name="action_login_download">LOGIN E DOWNLOAD</string>
+    <string name="action_login_short">LOGIN</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">Senha incorreta</string>
+    <string name="error_field_required">Este campo é obrigatório</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_atv_portal_online">AtvPortalOnline</string>
+
+</resources>

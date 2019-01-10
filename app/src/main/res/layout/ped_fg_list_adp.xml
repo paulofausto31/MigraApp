@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        >
+        <TextView
+            android:id="@+id/tvFgListPediNome"
+            android:hint="NOME DO PRODUTO"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+    <TableRow>
+        <CheckBox
+            android:id="@+id/chDelete"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            />
+
+        <TextView
+            android:id="@+id/spiFgListPediVal"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:hint="VALOR"
+        />
+        <!--
+        <TextView
+            android:id="@+id/tvProdAdpProdQtd"
+            android:text="QT"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            />
+            -->
+
+        <TextView
+            android:id="@+id/tvQtdCaixa"
+            android:text="0"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:textAlignment="center"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/tvUnArmz"
+            android:text=""
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            />
+        <TextView
+            android:id="@+id/tvQtdUnVend"
+            android:text="0"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:textAlignment="center"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/tvUnVend"
+            android:text=""
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            />
+
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:text="0"
+            />
+        <ImageButton
+            android:id="@+id/imgBtListPediAdpCalculos"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/calculator"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="gone"
+            />
+    </TableRow>
+</TableLayout>

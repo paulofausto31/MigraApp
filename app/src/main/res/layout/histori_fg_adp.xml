@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <!--
+        <TextView
+            android:id="@+id/tvHistNomCli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+        />
+        -->
+        <TextView
+            android:id="@+id/tvHistoriFgAdpFantasiCli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:hint="NOME FANTASIA"
+            />
+        <TextView
+            android:id="@+id/tvHistoriFgAdpRzSocCli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:hint="RAZÃO SOCIAL"
+            />
+        <TableRow>
+            <TextView
+                android:id="@+id/tvHistFgAdpHoraIni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:hint="00:00:00"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tvHistFgAdpCodPed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+            />
+        </TableRow>
+        </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <CheckBox
+                android:id="@+id/chHistFgAdp"
+                android:layout_height="40dp"
+                android:layout_width="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                />
+            <TextView
+                android:id="@+id/tvHistoriFgAdpData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+                android:layout_weight="1"
+            />
+            <TextView
+                android:id="@+id/tvHistoriFgAdpTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                />
+            <ImageButton
+                android:id="@+id/imgBtHistFgAdpInfor"
+                android:background="@drawable/information32x39"
+                android:visibility="gone"
+                />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

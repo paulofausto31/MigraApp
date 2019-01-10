@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btDgContRecCli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONTAS A RECEBER"
+
+        />
+    <Button
+        android:id="@+id/imgbtDgCliIncluir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PEDIDOS"
+        />
+    <Button
+        android:id="@+id/btDgCliNewPed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOVO PEDIDO À VISTA"
+        />
+    <Button
+        android:id="@+id/btHistorico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HISTÓRICO"/>
+    <Button
+        android:id="@+id/btClientFgDgOptNegativ"
+        android:layout_width="match_parent"
+        android:layout_height = "wrap_content"
+        android:text="NEGATIVAÇÃO"
+        />
+</LinearLayout>

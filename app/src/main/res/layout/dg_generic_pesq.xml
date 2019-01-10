@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/tbLayDgCliFrag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chDgPesqTodRot"
+                android:text="TODAS AS ROTAS"
+                android:textSize="20dp"/>
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chDgPesqSaldProd"
+                android:text="APENAS SALDO POSITIVO"
+                android:checked="true"
+                android:textSize="20dp"/>
+        </TableRow>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="FANTASIA / RZ SOCIAL"
+            android:id="@+id/edtDgCliRzSoci" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="RAZÃO SOCIAL"
+            android:id="@+id/edtDgCliFantasiaPesq" />
+    </TableLayout>
+    <TableLayout
+        android:id="@+id/tbLayDgProd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NOME DO PRODUTO?"
+            android:id="@+id/edtNome" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CÓDIGO?"
+            android:id="@+id/edtCodProd" />
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btPesquiProd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="PESQUISAR"
+        />
+</LinearLayout>

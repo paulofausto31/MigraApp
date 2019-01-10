@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <HorizontalScrollView android:id="@+id/scrow1">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TableRow>
+                <TableLayout android:layout_weight="1">
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DATA INICIAL"/>
+                    <EditText
+                        android:id="@+id/edtDatIni"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="date"
+                        android:layout_weight="1"
+                        />
+
+                </TableLayout>
+                <TableLayout android:layout_weight="1"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DATA FINAL"/>
+                    <TableRow>
+                        <EditText
+                            android:id="@+id/edtDatFim"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:inputType="date"
+                            />
+                    </TableRow>
+                </TableLayout>
+                <TableLayout
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp">
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TIPO PAGAMENTO"
+                            />
+                    </TableRow>
+                    <TableRow>
+                        <Spinner
+                            android:id="@+id/spCodFormPg"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                        </Spinner>
+                    </TableRow>
+                </TableLayout>
+                <TableLayout
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp">
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="STATUS" />
+                    </TableRow>
+                    <TableRow>
+                        <Spinner
+                            android:id="@+id/spinStatusPed"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                        </Spinner>
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+        </TableLayout>
+        </HorizontalScrollView>
+        <TableRow android:id="@+id/row2">
+            <TableLayout
+                android:layout_weight="1"
+                >
+                <TableRow>
+                    <TextView
+                        android:id="@+id/chTotTodsRotas"
+                        android:text="TODAS AS ROTAS"
+                        android:textSize="20dp"
+                        android:layout_weight="1"
+                        />
+                    <!--TOTAL DE TODAS AS ROTAS-->
+                    <TextView
+                        android:id="@+id/tvTotTodsRotas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="right"
+                        android:textSize="25dp"
+                        android:text="0000"
+                        />
+                </TableRow>
+            </TableLayout>
+
+        </TableRow>
+        <TableRow android:id="@+id/row3">
+            <TableLayout
+                android:layout_weight="1"
+                >
+                <TableRow>
+                    <Spinner
+                        android:layout_weight="1"
+                        android:id="@+id/spDgCalcPedRotas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        >
+
+                    </Spinner>
+                    <TextView
+                        android:id="@+id/tvTotRotAtual"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="right"
+                        android:textSize="25dp"
+                        android:text="0000"
+                        />
+                </TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="POSITIVAÇÃO"
+                    android:layout_weight="1"
+                    />
+                <TableRow>
+                    <TextView
+                        android:id="@+id/tvRotPositivaInt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="25dp"
+                        android:text="0"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvRotPositivacao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="right"
+                        android:textSize="25dp"
+                        android:text="0%"
+                        />
+                </TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:text="NEGATIVAÇÃO"
+                    />
+                <TableRow>
+                    <TextView
+                        android:id="@+id/tvRotNegativaInt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="25dp"
+                        android:text="0"
+                        />
+                    <TextView
+                        android:id="@+id/tvRotNegativacao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textSize="25dp"
+                        android:text="0%"
+                        />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:text="FALTAM"
+                        />
+                    <TextView
+                        android:id="@+id/tvAtvCalFalta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textSize="25dp"
+                        android:text="0"
+                        />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:text="TOTAL CLIENTES"
+                        />
+                    <TextView
+                        android:id="@+id/tvAtvCalTotCliRot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textSize="25dp"
+                        android:text="0"
+                        />
+                </TableRow>
+                <!--TOTAL DA ROTA ATUAL-->
+
+            </TableLayout>
+        </TableRow>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TableRow>
+                <Button
+                    android:id="@+id/btTotForRot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:text="CALCULAR"
+                    />
+                <ImageButton
+                    android:id="@+id/btHidShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:src="@drawable/eye_closed"
+                    android:layout_weight="1"
+                    />
+            </TableRow>
+        </TableLayout>
+        <ListView
+            android:id="@+id/lvAtvCalcPed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+        </ListView>
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="migra.br.smart.prodsVendsFg.ProdsVendsFg">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TableLayout
+        android:id="@+id/tbLayPdVendsFg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TableRow>
+            <EditText
+                android:id="@+id/edtPdVendFgDatIni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="DATA INICIO"
+                />
+            <EditText
+                android:id="@+id/edtPdVendFgDatFim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="DATA FIM"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TableRow>
+            <Button
+                android:id="@+id/btPdvendFgPesquisa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PESQUISAR"
+                />
+            <ImageButton
+                android:id="@+id/btPdvendFgShoHid"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/eye_closed"
+                android:text="PESQUISAR"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/lvProdsVendsFg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:id="@+id/btCalendarPedTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/calendar64x"
+                />
+            <EditText
+                android:id="@+id/tvDataPedidoTotal"
+                android:hint="dd/mm/aaaa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+            <Spinner
+                android:id="@+id/spinStatusPed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                >
+            </Spinner>
+            <Button
+                android:id="@+id/btCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CLIENTE" />
+            <TextView
+                android:id="@+id/tvNomeCliPedTotalFrag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="TODOS OS CLIENTE"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="CODIGO"
+                />
+            <TextView
+                android:id="@+id/tvCodCliPedTot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="TODOS"
+                />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ListView
+        android:id="@+id/lv_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="TOTAL GERAL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:text="R$  "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/tvTotalGeral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:hint="00"/>
+
+    </LinearLayout>
+
+</LinearLayout>

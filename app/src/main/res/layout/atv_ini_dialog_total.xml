@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <Button
+                android:id="@+id/btAtvIniMarcAlgum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MARCAR ALGUMAS ROTAS"
+                />
+            <Button
+                android:id="@+id/btAtvIniTotalizarEstRot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TOTALIZAR ESTA ROTA"
+                />
+            <Button
+                android:id="@+id/btAtvIniTotalizarTodsRots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TOTALIZAR TODAS AS ROTAS"
+                />
+        </LinearLayout>
+</LinearLayout>

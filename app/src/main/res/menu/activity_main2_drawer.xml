@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+    <item android:title="OPERAÇÕES">
+        <menu>
+
+            <item
+                android:id="@+id/navPesqCod"
+                android:icon="@drawable/pesq16x16"
+                android:title="PESQUISAR PRODUTO" />
+
+        </menu>
+    </item>
+</group>
+
+    <item android:title="NAVEGAÇÃO">
+        <menu>
+        <item
+            android:id="@+id/navProd"
+
+            android:title="PRODUTOS" />
+        <item
+            android:id="@+id/navClient"
+
+            android:title="CLIENTES" />
+        <item
+            android:id="@+id/navForn"
+            android:title="FORNECEDORES"
+            />
+        <item
+            android:id="@+id/navHabOrcament"
+
+            android:title=" ORÇAMENTOS" />
+        <item
+            android:id="@+id/navHabVend"
+            android:icon="@drawable/vender32x32"
+            android:title="VENDAS" />
+        </menu>
+
+    </item>
+
+
+</menu>

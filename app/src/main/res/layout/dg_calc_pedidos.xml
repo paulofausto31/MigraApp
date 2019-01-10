@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TableRow>
+            <TableLayout android:layout_weight="1">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DATA INICIAL"/>
+                <EditText
+                    android:id="@+id/edtDatIni"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:layout_weight="1"
+                    />
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="STATUS" />
+                </TableRow>
+                <TableRow>
+                    <Spinner
+                        android:id="@+id/spinStatusPed"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                    </Spinner>
+                </TableRow>
+            </TableLayout>
+            <TableLayout android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DATA FINAL"/>
+                <TableRow>
+                    <EditText
+                        android:id="@+id/edtDatFim"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="date"
+                        />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TIPO PAGAMENTO"
+                        />
+                </TableRow>
+                <TableRow>
+                    <Spinner
+                        android:id="@+id/spCodFormPg"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                    </Spinner>
+                </TableRow>
+            </TableLayout>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+        </TableRow>
+    </TableLayout>
+    <TableRow>
+        <TableLayout
+            android:layout_weight="1"
+            >
+            <TableRow>
+                <TextView
+                    android:id="@+id/chTotTodsRotas"
+                    android:text="TODAS AS ROTAS"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    />
+                <!--TOTAL DE TODAS AS ROTAS-->
+                <TextView
+                    android:id="@+id/tvTotTodsRotas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="25dp"
+                    android:text="0000"
+                    />
+            </TableRow>
+        </TableLayout>
+
+    </TableRow>
+    <TableRow>
+        <TableLayout
+            android:layout_weight="1"
+            >
+            <TableRow>
+                <Spinner
+                    android:layout_weight="1"
+                    android:id="@+id/spDgCalcPedRotas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                </Spinner>
+            </TableRow>
+
+            <!--TOTAL DA ROTA ATUAL-->
+            <TextView
+                android:id="@+id/tvTotRotAtual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="25dp"
+                android:text="0000"
+                />
+        </TableLayout>
+    </TableRow>
+    <TableLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <TableRow>
+        <Button
+            android:id="@+id/btTotForRot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CALCULAR POR ROTA"
+            />
+        <Button
+            android:id="@+id/btTotForCli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CALCULAR POR CLIENTE"
+            />
+    </TableRow>
+    </TableLayout>
+    </TableLayout>
+</ScrollView>

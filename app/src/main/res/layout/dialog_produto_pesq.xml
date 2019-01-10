@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/tbLayDgCliFrag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ROTA"
+                android:textSize="20dp"
+                />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/spDgRotCliPesq" />
+        </TableRow>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NOME DO CLIENTE?"
+            android:id="@+id/edtDgCliRzSoci" />
+    </TableLayout>
+    <TableLayout
+        android:id="@+id/tbLayDgProd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NOME DO PRODUTO?"
+            android:id="@+id/edtNome" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NOME DO FORNECEDOR?"
+            android:id="@+id/edtCodProd" />
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btPesquiProd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="PESQUISAR"
+        />
+</LinearLayout>

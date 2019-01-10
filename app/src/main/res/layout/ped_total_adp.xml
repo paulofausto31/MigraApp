@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvDataPedidoTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="dd/mm/aaaa"
+            android:textSize="18dp"
+            />
+        <TextView
+            android:id="@+id/tvHoraPedidoTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="hh:mm:ss"
+            android:layout_weight="1"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/tvValorPedidoTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="00"/>
+    </LinearLayout>
+</LinearLayout>

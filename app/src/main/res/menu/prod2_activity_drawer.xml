@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Pedido">
+        <menu>
+            <item
+                android:id="@+id/nav_clear_stat_cli"
+                android:title="LIMPAR STATUS"
+                />
+            <item
+                android:id="@+id/nav_finalizar_pedido"
+                android:icon="@drawable/complete_symbol"
+                android:title="FECHAR" />
+            <item
+                android:id="@+id/nav_cancelar_pedido"
+                android:icon="@drawable/x32x32"
+                android:title="CANCELAR"
+                />
+        </menu>
+
+    </item>
+    <item android:title="ITEM">
+        <menu>
+            <item
+                android:id="@+id/nav_del_item_marcado"
+                android:icon="@drawable/recycle"
+                android:title="DELETAR MARCADOS"
+                />
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item android:title="IR PARA">
+            <menu>
+                <item
+                    android:id="@+id/nav_calc_ped"
+                    android:icon="@drawable/calculadora"
+                    android:title="POSITIVAÇÃO"
+                    />
+                <item
+                    android:id="@+id/nav_histori_fg"
+                    android:icon="@drawable/history"
+                    android:title="HISTÓRICO"
+                    />
+                <item
+                    android:id="@+id/nav_justifica_fg"
+                    android:title="JUSTIFICATIVA"
+                    />
+                <!--<item
+                    android:id="@+id/nav_pedido_fragment"
+                    android:icon="@drawable/clipboard_full32x38"
+                    android:title="PEDIDOS" />-->
+                <item
+                    android:id="@+id/nav_prods_vend"
+                    android:title="PRODUTOS VENDIDOS"
+                    />
+                <item
+                    android:id="@+id/nav_config"
+                    android:icon="@drawable/config_tools50x50"
+                    android:title="CONFIGURAR"
+                    />
+                <item
+                    android:id="@+id/corrigeItem"
+                    android:title="CORRIGIR ITENS"
+                    />
+            </menu>
+        </item>
+    </group>
+</menu>

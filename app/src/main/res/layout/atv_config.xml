@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="migra.br.smart.atvConfig.Config">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONFIGURAÇÕES LOCAIS"
+        android:textSize="18dp"
+        />
+    <CheckBox
+        android:id="@+id/chMultBanco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEPARAR EMPRESAS"
+        />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edTxIp"
+                android:layout_weight="1"
+                android:hint="IP"
+                android:text="192.168.0.199"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edTxPort"
+                android:hint="PORTA"
+                android:inputType="number"
+                android:text="1234"/>
+
+        </TableRow>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtEmailDestPed"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:hint="E-MAIL DESTINO PEDIDOS"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtCnpjEmpresa"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_gravity="center_horizontal"
+            android:hint="CNPJ EMPRESA"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="CHAVE DE PERMISSÃO"
+            android:textSize="20dp"
+            />
+        <TableRow>
+            <EditText
+                android:id="@+id/edtAtvConfK1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                />
+            <EditText
+                android:id="@+id/edtAtvConfK2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_weight="3"
+                />
+            <EditText
+                android:id="@+id/edtAtvConfK3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_weight="6"
+                />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SALVAR"
+                android:id="@+id/btSaveConfig"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PORTAL ONLINE"
+                android:id="@+id/btPortalOnlineConfig" />
+        </TableRow>
+        <Button
+            android:id="@+id/btBackup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOCAL DO BACKUP"
+            />
+
+    </TableLayout>
+</LinearLayout>
